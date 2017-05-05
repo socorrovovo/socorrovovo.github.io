@@ -1,0 +1,32 @@
+{
+  "tools": [
+    {
+      "name": ".gitIgnore",
+      "site": "https://gitignore.io",
+      "about": "Gerador de .gitignore",
+      "tags":[
+        "git",
+        "projects",
+        "front-end"
+      ]
+    },
+    {
+      "name": "wirify",
+      "site": "https://wirify.io",
+      "about": "Criador dinâmico de wireframes",
+      "tags":[
+        "wireframe",
+        "projects"
+      ]
+    },
+    {
+      "name": "freepik",
+      "site": "https://freepik.com",
+      "about": "Site para download de imagens e vetores",
+      "tags":[
+        "graphics",
+        "vectors"
+      ]
+    }
+  ]
+}
