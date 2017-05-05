@@ -28,7 +28,7 @@
           $scope.findTo = function () {
             console.log(this.tag);
             // $scope.txtSearch +=  (($scope.txtSearch !== '') ? ' ' + this.tag : this.tag );
-            $scope.txtSearch =  this.tag );
+            $scope.txtSearch =  this.tag;
           }
         }
     }
