@@ -1,3 +1,65 @@
+.main-menu {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#311040+0,450b23+100 */
+  background: #311040; /* Old browsers */
+  background: -moz-linear-gradient(left, #311040 0%, #450b23 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #311040 0%,#450b23 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #311040 0%,#450b23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#311040', endColorstr='#450b23',GradientType=1 ); /* IE6-9 */
+}
+.main-menu a {
+  color: #EE3371;
+  text-transform: uppercase;
+}
+.main-menu a.btn {
+  background-color: #EE3371;
+  color: #FFF;
+}
+
+a.brand {
+  color: #FFF;
+}
+.text-highlight {
+  color: #EE3371;
+}
+.brand img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.categories a,
+.categories span {
+  display: inline-block;
+  margin: 0;
+  padding: 20px 5px;
+}
+.categories a {
+  color: #444;
+}
+.categories span {
+  font-weight: bold;
+}
+.categories .active a {
+  color: #EE3371;
+}
+.categories ul,
+.categories li {
+  display: inline-block;
+  margin: 0;
+}
+
+.input-field input[type=search] ~ .fa-times {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    color: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .3s color;
+}
+.input-field input[type=search]:focus ~ .fa-times {
+  color: #444;
+}
+
 [ng-cloak].loader {
   display: block !important;
 }
