@@ -11,6 +11,7 @@ body {
 }
 .main-menu a {
   color: #EE3371;
+  padding: 0 5px;
   text-transform: uppercase;
 }
 .main-menu a.btn {
