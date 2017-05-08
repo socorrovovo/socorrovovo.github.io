@@ -1,3 +1,6 @@
+body {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
 .main-menu {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#311040+0,450b23+100 */
   background: #311040; /* Old browsers */
@@ -127,3 +130,17 @@ a.brand {
     stroke-dashoffset: -65.973;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); } }
+
+/*
+ *
+ * Sobrescrevendo padrão Materialize
+ *
+ */
+
+.chip {
+  cursor: pointer;
+}
+.chip:hover {
+  background-color: #EE3371;
+  color: #FFF;
+}
