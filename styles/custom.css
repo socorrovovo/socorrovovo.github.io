@@ -13,7 +13,7 @@ body {
   color: #EE3371;
   text-transform: uppercase;
 }
-@media(max-width: 1124px) {
+@media(max-width: 1135px) {
   .main-menu a {
     padding: 0 5px;
   }
