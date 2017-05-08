@@ -11,8 +11,12 @@ body {
 }
 .main-menu a {
   color: #EE3371;
-  padding: 0 5px;
   text-transform: uppercase;
+}
+@media(min-width: 1124px) {
+  .main-menu a {
+    padding: 0 5px;
+  }
 }
 .main-menu a.btn {
   background-color: #EE3371;
