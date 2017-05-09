@@ -1,5 +1,5 @@
 # [Socorro, Vovó!](https://socorrovovo.github.io)
-site de apoio ao projeto socorrovovo da [@filosobella][filosobella]
+site de apoio ao projeto [socorrovovo][vsoriginal] da [@filosobella][filosobella]
 
 ## Sobre
 
@@ -14,3 +14,4 @@ Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconec
 [filosobella]: https://github.com/filosobella
 [euconectei]: https://github.com/euconectei
 [netinhos]: https://github.com/orgs/socorrovovo/people
+[svoriginal]: https://github.com/filosobella/socorrovovo
