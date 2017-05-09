@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ site.title }}</title>
+  <base href="{{ site.baseurl }}">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700,900" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'/>
+  <link rel="stylesheet" href="styles/custom.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.10.4/sass.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+</head>
+<body ng-app="socorroVovo">
+  <header>
+    {% include menu.html %}
+  </header>
+  <main class="container">
+    {{ content }}
+  </main>
+  <div class="loader" ng-cloak>
+    <svg viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+  {% include scripts.html %}
+</body>
+</html>

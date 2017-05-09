@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Socorro, Vovó!</title>
+  <base href="/">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700,900" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'/>
+  <link rel="stylesheet" href="styles/custom.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.10.4/sass.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+</head>
+<body ng-app="socorroVovo">
+  <header>
+    <nav class="main-menu">
+  <div class="nav-wrapper container">
+    <a href="./" class="left brand">Socorro, <span class="text-highlight">vovó!</span> <img src="images/socorrovovo.png" alt="imagem de uma idosa simbolizando a vovó"></a>
+    
+    <a href="#" data-activates="mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
+    <ul class="left hide-on-med-and-down">
+      
+        
+          <li class="active">
+            <a href="/sobre/">Sobre</a>
+          </li>
+        
+      
+        
+      
+        
+      
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="https://github.com/socorrovovo"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://twitter.com/socorrovovo"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://facebook.com/socorrovovo"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#" class="waves-effect waves-light btn">Quero ajudar</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile">
+      
+        
+          <li class="active">
+            <a href="/sobre/">Sobre</a>
+          </li>
+        
+      
+        
+      
+        
+      
+      <li><a href="https://github.com/socorrovovo"><i class="fa fa-github"></i>socorrovovo</a></li>
+      <li><a href="https://twitter.com/socorrovovo"><i class="fa fa-twitter"></i>socorrovovo</a></li>
+      <li><a href="https://facebook.com/socorrovovo"><i class="fa fa-facebook"></i>socorrovovo</a></li>
+      <li><a href="#">Quero ajudar</a></li>
+    </ul>
+  </div>
+</nav>
+  </header>
+  <main class="container">
+    <div class="allegory">
+  D<span class="horizontal">EXPLORE</span>SCUBR<span class="help">AJUDE</span>
+  <div class="gh"><span class="help">socorrovovo.github.io</span> | fork me on github!</div>
+</div>
+<div class="row">
+  <div class="col s12 offset-m2 m3 offset-l2 l3 v-spacer-l">
+    <p>Olá netinhos! <span class="text-highlight">&lt;3</span></p>
+    <p>Sou uma biblioteca de indicações totalmente colaborativa! Yeah! <span class="text-highlight">;p</span></p>
+    <p>Existo graças a todos vocês que me ajudam a arrumar minha bolsa com links novos! <span class="text-highlight">:3</span></p>
+    <p>Socorro vovó é singela homenagem ao desenho "Oma Bitte Kommen".</p>
+  </div>
+  <div class="col s12 m3 offset-l1 l2 v-spacer-m right-align">
+    <p>Através de curadoria, reunimos diversos links de recursos e ferramentas úteis.</p>
+    <p>A maioria das indicações são gratuitas. O que não for, a gente te avisa, tá?</p>
+    <p class="v-spacer-s">Os ícones e imagens utilizadas são do Freepik e Flaticon.</p>
+  </div>
+  <div class="col s12 m3 l3 v-spacer-l">
+    <p>O S.V. nasceu porque a <a href="https://github.com/filosobella">@filosobella</a> cansou de não saber mexer no  GitHub e de ter que abrir o .doc para ver seus links de ferramentas e recursos.</p>
+    <p>Somos uma comunidade colaborativa de indicações porque o <a href="https://github.com/euconectei">@euconectei</a> abraçou a causa e inspirou vários <a href="#">netinhos</a> a seguir essa caminhada supimpa! <span class="text-highlight">xD</span></p>
+  </div>
+</div>
+
+  </main>
+  <div class="loader" ng-cloak>
+    <svg viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js'></script>
+  <script src="scripts/geral.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/app.config.js"></script>
+  <script src="scripts/services/tools.factory.js"></script>
+  <script src="scripts/controllers/tools.controller.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-98652976-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>

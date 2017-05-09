@@ -1,0 +1,35 @@
+<nav class="main-menu">
+  <div class="nav-wrapper container">
+    <a href="./" class="left brand">Socorro, <span class="text-highlight">vovó!</span> <img src="images/socorrovovo.png" alt="imagem de uma idosa simbolizando a vovó"></a>
+    
+    <a href="#" data-activates="mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
+    <ul class="left hide-on-med-and-down">
+      {% for p in site.pages %}
+        {% if p.title != null %}
+          <li {% if p.url == page.url %}class="active"{% endif %}>
+            <a href="{{ p.url }}">{{ p.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#" class="waves-effect waves-light btn">Quero ajudar</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile">
+      {% for p in site.pages %}
+        {% if p.title != null %}
+          <li {% if p.url == page.url %}class="active"{% endif %}>
+            <a href="{{ p.url }}">{{ p.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      <li><a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i>{{ site.github_username }}</a></li>
+      <li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i>{{ site.twitter_username }}</a></li>
+      <li><a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i>{{ site.facebook_username }}</a></li>
+      <li><a href="#">Quero ajudar</a></li>
+    </ul>
+  </div>
+</nav>
