@@ -27,7 +27,7 @@ layout: default
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="tool in tools | filter: txtSearch">
+        <tr class="tool" ng-repeat="tool in tools | filter: txtSearch">
           <td><a ng-href="{( tool.site )}" ng-bind="tool.name"></a></td>
           <td ng-bind="tool.about"></td>
           <td>
