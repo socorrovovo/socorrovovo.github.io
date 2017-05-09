@@ -30,6 +30,10 @@ a.brand {
   vertical-align: middle;
 }
 
+main a {
+  color: #EE3371;
+}
+
 .categories a,
 .categories span {
   display: inline-block;
@@ -131,6 +135,50 @@ a.brand {
     stroke-dashoffset: -65.973;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); } }
+
+.allegory {
+  color: #e2e3e8;
+  font-size: 4rem;
+  font-weight: 900;
+  position: absolute;
+  z-index: -10;
+  user-select: none;
+  -moz-user-select: none;
+}
+.allegory .horizontal {
+  color: #EE3371;
+  display: inline-block;
+  font-size: 6rem;
+  left: 1.05em;
+  margin-bottom: 3.2em;
+  position: relative;
+  top: 1.75em;
+  transform: translate(0,100%) rotate(-90deg);
+  transform-origin: bottom left;
+  width: .65em;
+}
+.allegory .help {
+  color: #bbbcc1;
+}
+.allegory .gh {
+  bottom: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  left: 1.5em;
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+}
+
+.v-spacer-l {
+  margin-top: 250px;
+}
+.v-spacer-m {
+  margin-top: 150px;
+}
+.v-spacer-s {
+  margin-top: 50px;
+}
 
 /*
  *

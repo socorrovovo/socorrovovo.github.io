@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Socorro Vovó</title>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700,900" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'/>
   <link rel="stylesheet" href="styles/custom.css">
@@ -20,7 +20,7 @@
         
         <a href="#" data-activates="mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
         <ul class="left hide-on-med-and-down">
-          <li><a href="about.html">Sobre a Vovó</a></li>
+          <li><a href="#">Sobre a Vovó</a></li>
           <li><a href="#">Os Netinhos</a></li>
           <li><a href="#">Termos</a></li>
         </ul>
@@ -39,41 +39,27 @@
       </div>
     </nav>
   </header>
-  <main ng-controller="ToolsController" class="container">
-    <div class="row">
-      <div class="col s12 m12 l8 categories">
-        <span><i class="fa fa-shopping-bag"></i> Na bolsa da vovó:</span>
-        <ul>
-          <li class="active"><a href="#">Todos</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Front-End</a></li>
-          <li><a href="#">Produtividade</a></li>
-          <li><a href="#">Outros</a></li>
-        </ul>
-      </div>
-      <div class="col s12 m12 l4 search">
-        <input type="text" ng-model="txtSearch" id="txtSearch" placeholder="pesquisar" ng-trim="false">
-      </div>
+  <main class="container">
+    <div class="allegory">
+      D<span class="horizontal">EXPLORE</span>SCUBR<span class="help">AJUDE</span>
+      <div class="gh"><span class="help">socorrovovo.github.io</span> | fork me on github!</div>
     </div>
-    <div class="ng-cloak">
-      <table class="bordered highlight responsive table">
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Sobre</th>
-            <th>Tags</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr ng-repeat="tool in tools | filter: txtSearch">
-            <td><a href="{{ tool.site }}">{{ tool.name }}</a></td>
-            <td>{{ tool.about }}</td>
-            <td>
-              <span ng-repeat="tag in tool.tags" class="chip tag" ng-click="findTo()">{{ tag }}</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="row">
+      <div class="col s12 offset-m2 m3 offset-l2 l3 v-spacer-l">
+        <p>Olá netinhos! <span class="text-highlight"><3</span></p>
+        <p>Sou uma biblioteca de indicações totalmente colaborativa! Yeah! <span class="text-highlight">;p</span></p>
+        <p>Existo graças a todos vocês que me ajudam a arrumar minha bolsa com links novos! <span class="text-highlight">:3</span></p>
+        <p>Socorro vovó é singela homenagem ao desenho "Oma Bitte Kommen".</p>
+      </div>
+      <div class="col s12 m3 offset-l1 l2 v-spacer-m right-align">
+        <p>Através de curadoria, reunimos diversos links de recursos e ferramentas úteis.</p>
+        <p>A maioria das indicações são gratuitas. O que não for, a gente te avisa, tá?</p>
+        <p class="v-spacer-s">Os ícones e imagens utilizadas são do Freepik e Flaticon.</p>
+      </div>
+      <div class="col s12 m3 l3 v-spacer-l">
+        <p>O S.V. nasceu porque a <a href="https://github.com/filosobella">@filosobella</a> cansou de não saber mexer no  GitHub e de ter que abrir o .doc para ver seus links de ferramentas e recursos.</p>
+        <p>Somos uma comunidade colaborativa de indicações porque o <a href="https://github.com/euconectei">@euconectei</a> abraçou a causa e inspirou vários <a href="#">netinhos</a> a seguir essa caminhada supimpa! <span class="text-highlight">xD</span></p>
+      </div>
     </div>
   </main>
   <div class="loader" ng-cloak>

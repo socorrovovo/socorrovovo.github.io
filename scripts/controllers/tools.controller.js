@@ -13,8 +13,6 @@
         $scope.txtSearch = '';
         $scope.selectedWords = [];
 
-        
-
         activate();
 
         function activate() {
