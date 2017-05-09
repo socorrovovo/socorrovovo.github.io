@@ -14,4 +14,4 @@ Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconec
 [filosobella]: https://github.com/filosobella
 [euconectei]: https://github.com/euconectei
 [netinhos]: https://github.com/orgs/socorrovovo/people
-[svoriginal]: https://github.com/filosobella/socorrovovo
+[vsoriginal]: https://github.com/filosobella/socorrovovo
