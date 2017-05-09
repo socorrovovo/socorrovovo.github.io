@@ -1,9 +1,13 @@
 {
   "tools": [
     {
-      "name": ".gitIgnore",
+      "name": ".gitignore",
       "site": "https://gitignore.io",
       "about": "Gerador de .gitignore",
+      "categories": [
+        "dev",
+        "front-end"
+      ],
       "tags":[
         "git",
         "projects",
@@ -14,6 +18,9 @@
       "name": "Amazing Textures",
       "site": "http://www.amazingtextures.com",
       "about": "AmazingTextures.com is one of the biggest and most popular dedicated online texture libraries in the world.",
+      "categories": [
+        "design"
+      ],
       "tags":[
         "images",
         "textures",
@@ -21,45 +28,24 @@
       ]
     },
     {
-      "name": "wirify",
-      "site": "https://wirify.io",
-      "about": "Criador dinâmico de wireframes",
+      "name": "Web App Manifest Generator",
+      "site": "https://tomitm.github.io/appmanifest/",
+      "about": "Criador dinâmico de manifest.json",
+      "categories": [
+        "front-end"
+      ],
       "tags":[
-        "wireframe",
-        "projects"
-      ]
-    },
-    {
-      "name": "wirify",
-      "site": "https://wirify.io",
-      "about": "Criador dinâmico de wireframes",
-      "tags":[
-        "wireframe",
-        "projects"
-      ]
-    },
-    {
-      "name": "wirify",
-      "site": "https://wirify.io",
-      "about": "Criador dinâmico de wireframes",
-      "tags":[
-        "wireframe",
-        "projects"
-      ]
-    },
-    {
-      "name": "wirify",
-      "site": "https://wirify.io",
-      "about": "Criador dinâmico de wireframes",
-      "tags":[
-        "wireframe",
-        "projects"
+        "pwa",
+        "mobile"
       ]
     },
     {
       "name": "freepik",
       "site": "https://freepik.com",
       "about": "Site para download de imagens e vetores",
+      "categories": [
+        "design"
+      ],
       "tags":[
         "graphics",
         "vectors"
