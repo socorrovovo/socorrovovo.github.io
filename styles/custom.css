@@ -72,6 +72,10 @@ main a {
   color: #444;
 }
 
+.tool a {
+  font-weight: bold;
+}
+
 [ng-cloak].loader {
   display: block !important;
 }
