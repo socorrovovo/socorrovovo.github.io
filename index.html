@@ -28,7 +28,7 @@ layout: default
       </thead>
       <tbody>
         <tr ng-repeat="tool in tools | filter: txtSearch">
-          <td><a ng-href="tool.site" ng-bind="tool.name"></a></td>
+          <td><a ng-href="{( tool.site )}" ng-bind="tool.name"></a></td>
           <td ng-bind="tool.about"></td>
           <td>
             <span ng-repeat="tag in tool.tags" class="chip tag" ng-click="findTo()" ng-bind="tag"></span>
