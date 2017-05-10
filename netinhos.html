@@ -1,0 +1,21 @@
+---
+layout: default
+title: Netinhos
+permalink: /netinhos/
+---
+
+<div class="row">
+  <div class="col s6 m4 l3" ng-repeat="member in members">
+    <div class="card-panel grey lighten-5 z-depth-1">
+      <div class="row valign-wrapper">
+        <div class="col s2">
+          <img ng-src="{( member.avatar_url )}" alt="" class="circle responsive-img">
+        </div>
+        <div class="col s10">
+          <span class="black-text" ng-bind="member.login"></span><br>
+          <a ng-href="https://github.com/{( member.login )}">Ir para o GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
