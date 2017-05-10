@@ -76,6 +76,10 @@ main a {
   font-weight: bold;
 }
 
+.member .valign-wrapper {
+  margin-bottom: 0;
+}
+
 [ng-cloak].loader {
   display: block !important;
 }
