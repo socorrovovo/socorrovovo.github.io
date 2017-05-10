@@ -8,10 +8,10 @@ permalink: /netinhos/
   <div class="col s6 m4 l3" ng-repeat="member in members">
     <div class="card-panel grey lighten-5 z-depth-1">
       <div class="row valign-wrapper">
-        <div class="col s2">
+        <div class="col s4">
           <img ng-src="{( member.avatar_url )}" alt="" class="circle responsive-img">
         </div>
-        <div class="col s10">
+        <div class="col s8">
           <span class="black-text" ng-bind="member.login"></span><br>
           <a ng-href="https://github.com/{( member.login )}">Ir para o GitHub</a>
         </div>
