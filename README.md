@@ -11,6 +11,23 @@ Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconec
 
 (em breve)
 
+## Como aparecer na página de Netinhos
+
+### Caso você tenha GitHub
+
+1. Após contribuir, você será adicionado na organização do @socorrovovo.
+2. Sendo adicionado, você precisa colocar a visibilidade da organização como "Public".
+3. Pronto! Você já aparece la
+
+### Caso não tenha GitHub
+
+Iremos adicionar você manualmente na página @socorrovovo.
+
+1. Após contribuir, nos envie seus dados.
+2. Faremos esta inclusão manual.
+3. Pronto! Você já aparece la
+
+
 [filosobella]: https://github.com/filosobella
 [euconectei]: https://github.com/euconectei
 [netinhos]: https://github.com/orgs/socorrovovo/people
