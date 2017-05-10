@@ -17,7 +17,7 @@
         return service;
 
         function getData() {
-          $http.get(DB_CONFIG.url)
+          $http.get(DB_CONFIG.tools)
             .then(
               function (res) {
                 // console.log(res.data.tools);
