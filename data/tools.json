@@ -28,6 +28,19 @@
       ]
     },
     {
+      "name": "Iconfinder",
+      "site": "https://www.iconfinder.com/",
+      "about": "Iconfinder provides beautiful icons to millions of designers and developers. Iconfinder now hosts the worlds largest collection of premium icons.",
+      "categories": [
+        "design"
+      ],
+      "tags":[
+        "images",
+        "icons",
+        "free"
+      ]
+    },
+    {
       "name": "Web App Manifest Generator",
       "site": "https://tomitm.github.io/appmanifest/",
       "about": "Criador dinâmico de manifest.json",
