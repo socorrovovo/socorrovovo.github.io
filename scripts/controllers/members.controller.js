@@ -5,7 +5,7 @@
         .module('socorroVovo')
         .controller('MembersController', MembersController)
 
-    ToolsController.$inject = ['membersFactory', '$scope'];
+    MembersController.$inject = ['membersFactory', '$scope'];
 
     function MembersController(membersFactory, $scope) {
         /* jshint validthis:true */
@@ -18,7 +18,7 @@
 
           membersFactory.getData().then(
             function (data) {
-              $scope.tools = data;
+              $scope.members = data;
             }
           );
         }
