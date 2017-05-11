@@ -41,6 +41,33 @@
       ]
     },
     {
+      "name": "Flat UI Colors",
+      "site": "http://flatuicolors.com/",
+      "about": "Easy Color Pallette from Flat UI Theme.",
+      "categories": [
+        "design"
+      ],
+      "tags":[
+        "colors",
+        "flat"
+      ]
+    },
+    {
+      "name": "Devmind.io",
+      "site": "https://devmind.io/",
+      "about": "An brazilian cross-platform cloud based IDE to develop websites and applications.",
+      "categories": [
+        "dev"
+      ],
+      "tags":[
+        "devmind",
+        "cloud",
+        "editor",
+        "code",
+        "ide"
+      ]
+    },
+    {
       "name": "Web App Manifest Generator",
       "site": "https://tomitm.github.io/appmanifest/",
       "about": "Criador dinâmico de manifest.json",
@@ -72,8 +99,10 @@
         "dev"
       ],
       "tags":[
+        "c9",
         "code",
         "cloud",
+        "editor",
         "ide"
       ]
     }
