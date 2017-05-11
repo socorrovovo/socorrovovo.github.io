@@ -2,7 +2,7 @@ angular
   .module('socorroVovo')
   .constant('DB_CONFIG', {
     tools: './data/tools.json',
-    members: 'https://api.github.com/orgs/socorrovovo/members',
+    members: 'https://api.github.com/repos/socorrovovo/socorrovovo.github.io/contributors',
     nMembers: './data/members.json'
   })
   .config([
