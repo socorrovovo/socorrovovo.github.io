@@ -72,6 +72,19 @@ main a {
   color: #444;
 }
 
+.tag.active {
+  background-color: #EE3371;
+  color: #fff;
+}
+
+.tool a {
+  font-weight: bold;
+}
+
+.member .valign-wrapper.row {
+  margin-bottom: 0;
+}
+
 [ng-cloak].loader {
   display: block !important;
 }

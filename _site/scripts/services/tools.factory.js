@@ -17,10 +17,11 @@
         return service;
 
         function getData() {
-          $http.get(DB_CONFIG.url)
+          $http.get(DB_CONFIG.tools)
             .then(
               function (res) {
-                // console.log(res.data.tools);
+                console.log(res.data);
+                console.log(res.data.tools);
                 // return res.data.tools;
                 deferred.resolve(res.data.tools);
               },

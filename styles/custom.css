@@ -72,6 +72,11 @@ main a {
   color: #444;
 }
 
+.tag.active {
+  background-color: #EE3371;
+  color: #fff;
+}
+
 .tool a {
   font-weight: bold;
 }

@@ -10,8 +10,10 @@
     function ToolsController(toolsFactory, $scope) {
         /* jshint validthis:true */
         var vm = this;
-        $scope.txtSearch = '';
-        $scope.selectedWords = [];
+        $scope.search = {
+          "categories": "",
+          "tags": ""
+        };
 
         activate();
 
@@ -23,11 +25,22 @@
             }
           );
 
-          $scope.findTo = function () {
-            console.log(this.tag);
-            // $scope.txtSearch +=  (($scope.txtSearch !== '') ? ' ' + this.tag : this.tag );
-            $scope.txtSearch =  this.tag;
-          }
         }
+        
+        $scope.findTo = function () {
+          console.log(this.tag);
+          // $scope.txtSearch +=  (($scope.txtSearch !== '') ? ' ' + this.tag : this.tag );
+          $scope.search.tags = this.tag;
+        }
+        
+        $scope.removeTag = function () {
+          $scope.search.tags = '';
+        }
+        
+        $scope.searchCategory = function (cat) {
+          $scope.search.categories = cat;
+          console.log($scope.search.categories);
+        }
+        
     }
 })();
