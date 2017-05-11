@@ -15,9 +15,8 @@ Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconec
 
 ### Caso você tenha GitHub
 
-1. Após contribuir, você será adicionado na organização do @socorrovovo.
-2. Sendo adicionado, você precisa colocar a visibilidade da organização como "Public".
-3. Pronto! Você já aparece la
+1. Após contribuir (pull request), você será adicionado na área de [contribuidores](contribuidores) do @socorrovovo.
+2. Pronto! Você já aparece lá na página de [Netinhos](netinhos). Caso não apareça no momento, aguarde um pouco e veja novamente.
 
 ### Caso não tenha GitHub
 

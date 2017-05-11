@@ -20,8 +20,8 @@
           $http.get(DB_CONFIG.members)
             .then(
               function (res) {
-                console.log('member.factory getData res.data');
-                console.log(res.data);
+                // console.log('member.factory getData res.data');
+                // console.log(res.data);
                 $http.get(DB_CONFIG.nMembers).then(
                   function (nRes) {
                     for (var i = 0; i < nRes.data.length; i++) {
@@ -29,6 +29,7 @@
                     }
                   }
                 );
+                // console.log(res.data);
                 // return res.data;
                 deferred.resolve(res.data);
               },

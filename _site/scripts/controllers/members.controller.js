@@ -18,7 +18,7 @@
 
           membersFactory.getData().then(
             function (data) {
-                console.log(data);
+                // console.log(data);
               $scope.members = data;
             }
           );

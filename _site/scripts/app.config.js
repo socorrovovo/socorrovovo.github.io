@@ -1,9 +1,9 @@
 angular
   .module('socorroVovo')
   .constant('DB_CONFIG', {
-    tools: './data/tools.json',
+    tools: '/data/tools.json',
     members: 'https://api.github.com/repos/socorrovovo/socorrovovo.github.io/contributors',
-    nMembers: './data/members.json'
+    nMembers: '/data/members.json'
   })
   .config([
     '$interpolateProvider', function($interpolateProvider) {
