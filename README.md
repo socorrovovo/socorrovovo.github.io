@@ -17,7 +17,7 @@ Tem medo do terminal? Use o SmartGit ou o cliente gráfico de sua preferência. 
 
 Eba!!! Agora, você pode contribuir no projeto. :3
 
-Por enquanto, o arquivo que alimenta a lista de ferramentas é o [tools.json][dataFerramentas]. Para contribuir, basta enviar sua sugestão de ferramenta adiciondo um objeto com as informações:
+Por enquanto, o arquivo que alimenta a lista de ferramentas é o [tools.json][dataFerramentas]. Para contribuir, basta enviar sua sugestão de ferramenta adicionando um objeto com as informações:
 
   ```js
 {
