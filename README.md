@@ -9,7 +9,33 @@ Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconec
 
 ## Como Contribuir
 
-(em breve)
+### Como vou ajudar se sou iniciante?
+
+Calma, ainda há esperança! Faz [cursinho interativo de GitHub](cursoGithub).
+
+Agora, você pode contribuir no projeto.
+
+Por enquanto, nosso arquivo que alimenta a lista de ferramentas é o [tools.json](dataFerramentas). Então, para contribuir enviando sua sugestão de ferramenta adicione um objeto com estas informações:
+
+  ```js
+{
+  "name": "",
+  "site": "",
+  "about": "",
+  "categories": [
+    "categoria1",
+    "categoria2"
+  ],
+  "tags":[
+    "tag1",
+    "tag2"
+  ]
+}
+  ```
+
+Você pode adicionar quantas tags quiser. As categorias também são ilimitadas, mas sugerimos que sejam poucas e específicas.
+
+Mas se o desespero com o GitHub ainda existir, Vovó te ajudará. Entre em contato nas redes sociais.
 
 ## Como aparecer na página de Netinhos
 
@@ -26,8 +52,9 @@ Iremos adicionar você manualmente na página @socorrovovo.
 2. Faremos esta inclusão manual.
 3. Pronto! Você já aparece la
 
-
-[filosobella]: https://github.com/filosobella
+[cursoGithub]: https://try.github.io/levels/1/challenges/1
+[dataFerramentas]: /data/tools.json
 [euconectei]: https://github.com/euconectei
+[filosobella]: https://github.com/filosobella
 [netinhos]: https://github.com/orgs/socorrovovo/people
 [vsoriginal]: https://github.com/filosobella/socorrovovo
