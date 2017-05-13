@@ -11,11 +11,11 @@ Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconec
 
 ### Como vou ajudar se sou iniciante?
 
-Calma, ainda há esperança! Faz [cursinho interativo de GitHub](cursogithub).
+Calma, ainda há esperança! Faz o [cursinho interativo de GitHub][cursoGithub].
 
 Agora, você pode contribuir no projeto.
 
-Por enquanto, nosso arquivo que alimenta a lista de ferramentas é o [tools.json](dataferramentas). Então, para contribuir enviando sua sugestão de ferramenta adicione um objeto com estas informações:
+Por enquanto, nosso arquivo que alimenta a lista de ferramentas é o [tools.json][dataFerramentas]. Então, para contribuir enviando sua sugestão de ferramenta adicione um objeto com estas informações:
 
   ```js
 {
@@ -50,10 +50,10 @@ Iremos adicionar você manualmente na página @socorrovovo.
 
 1. Após contribuir, nos envie seus dados.
 2. Faremos esta inclusão manual.
-3. Pronto! Você já aparece la
+3. Pronto! Você já aparece lá
 
-[cursogithub]: https://try.github.io/levels/1/challenges/1
-[dataferramentas]: /data/tools.json
+[cursoGithub]: https://try.github.io/levels/1/challenges/1
+[dataFerramentas]: /data/tools.json
 [euconectei]: https://github.com/euconectei
 [filosobella]: https://github.com/filosobella
 [netinhos]: https://github.com/orgs/socorrovovo/people
