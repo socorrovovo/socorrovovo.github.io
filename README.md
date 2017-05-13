@@ -34,7 +34,7 @@ Por enquanto, o arquivo que alimenta a lista de ferramentas é o [tools.json][da
   ]
 }
   ```
-Adicione quantas tags. As categorias também são ilimitadas, mas sugerimos que sejam poucas e específicas.
+Adicione quantas tags quiser. As categorias também são ilimitadas, mas sugerimos que sejam poucas e específicas.
 
 Mas se o desespero com o GitHub ainda existir, Vovó te ajudará. Entre em contato nas redes sociais.
 
