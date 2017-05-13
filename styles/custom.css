@@ -165,7 +165,7 @@ main a {
 .allegory .horizontal {
   color: #EE3371;
   display: inline-block;
-  font-size: 6rem;
+  font-size: 1.45em;
   left: 1.05em;
   margin-bottom: 3.2em;
   position: relative;
@@ -179,7 +179,7 @@ main a {
 }
 .allegory .gh {
   bottom: 0;
-  font-size: 1rem;
+  font-size: .25em;
   font-weight: 600;
   left: 1.5em;
   position: absolute;
@@ -196,6 +196,22 @@ main a {
 .v-spacer-s {
   margin-top: 50px;
 }
+
+@media(max-width: 600px) {
+  .allegory {
+    font-size: 2rem;
+  }
+  .v-spacer-l {
+    margin-top: 50px;
+  }
+  .v-spacer-m {
+    margin-top: 30px;
+  }
+  .v-spacer-s {
+    margin-top: 20px;
+  }
+}
+
 
 /*
  *
