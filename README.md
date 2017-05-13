@@ -1,5 +1,5 @@
 # [Socorro, Vovó!](https://socorrovovo.github.io)
-site de apoio ao projeto [socorrovovo][vsoriginal] da [@filosobella][filosobella]
+Site de apoio ao projeto [socorrovovo][vsoriginal] da [@filosobella][filosobella]
 
 ## Sobre
 
@@ -9,13 +9,15 @@ Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconec
 
 ## Como Contribuir
 
-### Como vou ajudar se sou iniciante?
+### E agora, Vovó? Sou iniciante!
 
-Calma, ainda há esperança! Faz o [cursinho interativo de GitHub][cursoGithub].
+Calma jovem. Ainda há esperanças! Você pode fazer o [cursinho interativo de GitHub][cursoGithub].
 
-Agora, você pode contribuir no projeto.
+Tem medo do terminal? Use o SmartGit ou o cliente gráfico de sua preferência. ;p
 
-Por enquanto, nosso arquivo que alimenta a lista de ferramentas é o [tools.json][dataFerramentas]. Então, para contribuir enviando sua sugestão de ferramenta adicione um objeto com estas informações:
+Eba!!! Agora, você pode contribuir no projeto. :3
+
+Por enquanto, o arquivo que alimenta a lista de ferramentas é o [tools.json][dataFerramentas]. Para contribuir, basta enviar sua sugestão de ferramenta adiciondo um objeto com as informações:
 
   ```js
 {
@@ -32,8 +34,7 @@ Por enquanto, nosso arquivo que alimenta a lista de ferramentas é o [tools.json
   ]
 }
   ```
-
-Você pode adicionar quantas tags quiser. As categorias também são ilimitadas, mas sugerimos que sejam poucas e específicas.
+Adicione quantas tags. As categorias também são ilimitadas, mas sugerimos que sejam poucas e específicas.
 
 Mas se o desespero com o GitHub ainda existir, Vovó te ajudará. Entre em contato nas redes sociais.
 
@@ -50,7 +51,7 @@ Iremos adicionar você manualmente na página @socorrovovo.
 
 1. Após contribuir, nos envie seus dados.
 2. Faremos esta inclusão manual.
-3. Pronto! Você já aparece lá
+3. Pronto! Você já aparece lá!
 
 [cursoGithub]: https://try.github.io/levels/1/challenges/1
 [dataFerramentas]: /data/tools.json
