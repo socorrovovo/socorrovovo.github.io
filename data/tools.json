@@ -65,6 +65,18 @@
       ]
     },
     {
+      "name": "Coolors",
+      "site": "https://coolors.co/",
+      "about": "The super fast color schemes generator! Create, save and share perfect palettes in seconds!",
+      "categories": [
+        "design"
+      ],
+      "tags":[
+        "colors",
+        "flat"
+      ]
+    },
+    {
       "name": "Devmind.io",
       "site": "https://devmind.io/",
       "about": "An brazilian cross-platform cloud based IDE to develop websites and applications.",
