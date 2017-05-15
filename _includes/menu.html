@@ -13,9 +13,9 @@
       {% endfor %}
     </ul>
     <ul class="right hide-on-med-and-down">
-      <li><a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a></li>
-      <li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a></li>
+      {% if site.github_username != null %}<li><a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a></li>{% endif %}
+      {% if site.twitter_username != null %}<li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a></li>{% endif %}
+      {% if site.facebook_username != null %}<li><a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a></li>{% endif %}
       <li><a href="#" class="waves-effect waves-light btn">Quero ajudar</a></li>
     </ul>
     <ul class="side-nav" id="mobile">
