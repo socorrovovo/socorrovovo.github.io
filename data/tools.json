@@ -92,6 +92,34 @@
       ]
     },
     {
+      "name": "Codepen",
+      "site": "http://codepen.io/",
+      "about": "Show case of advanced techniques with editable source code.",
+      "categories": [
+        "dev"
+      ],
+      "tags":[
+        "cloud",
+        "editor",
+        "code",
+        "ide"
+      ]
+    },
+    {
+      "name": "CodeAnywhere",
+      "site": "https://codeanywhere.com/",
+      "about": "A complete toolset for web development. Enabling you to edit, collaborate and run your projects from any device.",
+      "categories": [
+        "dev"
+      ],
+      "tags":[
+        "cloud",
+        "editor",
+        "code",
+        "ide"
+      ]
+    },
+    {
       "name": "Web App Manifest Generator",
       "site": "https://tomitm.github.io/appmanifest/",
       "about": "Criador dinâmico de manifest.json",
