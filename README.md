@@ -1,5 +1,5 @@
 # [Socorro, Vovó!](https://socorrovovo.github.io)
-site de apoio ao projeto [socorrovovo][vsoriginal] da [@filosobella][filosobella]
+Site de apoio ao projeto [socorrovovo][vsoriginal] da [@filosobella][filosobella]
 
 ## Sobre
 
@@ -9,7 +9,34 @@ Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconec
 
 ## Como Contribuir
 
-(em breve)
+### E agora, Vovó? Sou iniciante!
+
+Calma jovem. Ainda há esperanças! Você pode fazer o [cursinho interativo de GitHub][cursoGithub].
+
+Tem medo do terminal? Use o SmartGit ou o cliente gráfico de sua preferência. ;p
+
+Eba!!! Agora, você pode contribuir no projeto. :3
+
+Por enquanto, o arquivo que alimenta a lista de ferramentas é o [tools.json][dataFerramentas]. Para contribuir, basta enviar sua sugestão de ferramenta adicionando um objeto com as informações:
+
+  ```js
+{
+  "name": "",
+  "site": "",
+  "about": "",
+  "categories": [
+    "categoria1",
+    "categoria2"
+  ],
+  "tags":[
+    "tag1",
+    "tag2"
+  ]
+}
+  ```
+Adicione quantas tags quiser. As categorias também são ilimitadas, mas sugerimos que sejam poucas e específicas.
+
+Mas se o desespero com o GitHub ainda existir, Vovó te ajudará. Entre em contato nas redes sociais.
 
 ## Como aparecer na página de Netinhos
 
@@ -24,10 +51,11 @@ Iremos adicionar você manualmente na página @socorrovovo.
 
 1. Após contribuir, nos envie seus dados.
 2. Faremos esta inclusão manual.
-3. Pronto! Você já aparece la
+3. Pronto! Você já aparece lá!
 
-
-[filosobella]: https://github.com/filosobella
+[cursoGithub]: https://try.github.io/levels/1/challenges/1
+[dataFerramentas]: /data/tools.json
 [euconectei]: https://github.com/euconectei
+[filosobella]: https://github.com/filosobella
 [netinhos]: https://github.com/orgs/socorrovovo/people
 [vsoriginal]: https://github.com/filosobella/socorrovovo

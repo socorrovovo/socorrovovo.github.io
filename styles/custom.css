@@ -8,11 +8,17 @@ body {
   background: -webkit-linear-gradient(left, #311040 0%,#450b23 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #311040 0%,#450b23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#311040', endColorstr='#450b23',GradientType=1 ); /* IE6-9 */
+  box-shadow: none;
 }
 .main-menu a {
   color: #EE3371;
   text-transform: uppercase;
 }
+
+nav .button-collapse {float: right;}
+
+.btn, .btn-large, .btn-flat {border-radius: 20px;}
+
 @media(max-width: 1135px) {
   .main-menu a {
     padding: 0 5px;
@@ -20,6 +26,13 @@ body {
 }
 .main-menu a.btn {
   background-color: #EE3371;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.main-menu a:hover.btn {
+  background-color: #ef115b;
   color: #FFF;
 }
 
@@ -165,7 +178,7 @@ main a {
 .allegory .horizontal {
   color: #EE3371;
   display: inline-block;
-  font-size: 6rem;
+  font-size: 1.45em;
   left: 1.05em;
   margin-bottom: 3.2em;
   position: relative;
@@ -179,7 +192,7 @@ main a {
 }
 .allegory .gh {
   bottom: 0;
-  font-size: 1rem;
+  font-size: .25em;
   font-weight: 600;
   left: 1.5em;
   position: absolute;
@@ -196,6 +209,22 @@ main a {
 .v-spacer-s {
   margin-top: 50px;
 }
+
+@media(max-width: 600px) {
+  .allegory {
+    font-size: 2rem;
+  }
+  .v-spacer-l {
+    margin-top: 50px;
+  }
+  .v-spacer-m {
+    margin-top: 30px;
+  }
+  .v-spacer-s {
+    margin-top: 20px;
+  }
+}
+
 
 /*
  *

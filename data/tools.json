@@ -41,9 +41,33 @@
       ]
     },
     {
+      "name": "Unsplash",
+      "site": "https://unsplash.com",
+      "about": "Free high resolution images licensed in the creative commons zero license.",
+      "categories": [
+        "design"
+      ],
+      "tags":[
+        "images",
+        "free"
+      ]
+    },
+    {
       "name": "Flat UI Colors",
       "site": "http://flatuicolors.com/",
       "about": "Easy Color Pallette from Flat UI Theme.",
+      "categories": [
+        "design"
+      ],
+      "tags":[
+        "colors",
+        "flat"
+      ]
+    },
+    {
+      "name": "Coolors",
+      "site": "https://coolors.co/",
+      "about": "The super fast color schemes generator! Create, save and share perfect palettes in seconds!",
       "categories": [
         "design"
       ],
@@ -61,6 +85,34 @@
       ],
       "tags":[
         "devmind",
+        "cloud",
+        "editor",
+        "code",
+        "ide"
+      ]
+    },
+    {
+      "name": "Codepen",
+      "site": "http://codepen.io/",
+      "about": "Show case of advanced techniques with editable source code.",
+      "categories": [
+        "dev"
+      ],
+      "tags":[
+        "cloud",
+        "editor",
+        "code",
+        "ide"
+      ]
+    },
+    {
+      "name": "CodeAnywhere",
+      "site": "https://codeanywhere.com/",
+      "about": "A complete toolset for web development. Enabling you to edit, collaborate and run your projects from any device.",
+      "categories": [
+        "dev"
+      ],
+      "tags":[
         "cloud",
         "editor",
         "code",
