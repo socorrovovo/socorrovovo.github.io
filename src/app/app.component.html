@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="container">
+  <div *ngIf="!(authService.authenticated$ | async)">
+    <form class="form-inline">
+      <label class="sr-only" for="email">Name</label>
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="email" name="email" [(ngModel)]="email" placeholder="email">
+
+      <label class="sr-only" for="password">Username</label>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-addon">@</div>
+        <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password" placeholder="senha">
+      </div>
+
+      <button (click)="signup()" [disabled]="!email || !password" class="btn btn-primary">Registrar</button>
+      <button (click)="loginWithGoogle()" class="btn btn-primary">com Google</button>
+      <button (click)="login()" [disabled]="!email || !password" class="btn btn-primary">Entrar</button>
+    </form>
+  </div>
+  <button (click)="logout()" *ngIf="authService.authenticated$ | async" class="btn btn-primary">Sair</button>
+</div>
+<main class="main">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+

@@ -1,0 +1,75 @@
+<form class="tool-form" (ngSubmit)="submit()" novalidate>
+  <fieldset>
+    <legend>Incluir Ferramenta</legend>
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input
+        [(ngModel)]="name"
+        autocomplete="off"
+        autofocus
+        class="tool-form__input"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Nome"
+        required
+        type="text">
+    </div>
+    <div class="form-group">
+      <label for="url">Link</label>
+      <input
+        [(ngModel)]="url"
+        autocomplete="off"
+        autofocus
+        class="tool-form__input"
+        name="site"
+        id="site"
+        class="form-control"
+        placeholder="Link"
+        required
+        type="text">
+    </div>
+    <div class="form-group">
+      <label for="about">Sobre</label>
+      <input
+        [(ngModel)]="about"
+        autocomplete="off"
+        autofocus
+        class="tool-form__input"
+        name="about"
+        id="about"
+        class="form-control"
+        placeholder="Sobre"
+        required
+        type="text">
+    </div>
+    <div class="form-group">
+      <label for="tags">Tags</label>
+      <input
+        [(ngModel)]="tags"
+        autocomplete="off"
+        autofocus
+        class="tool-form__input"
+        name="tags"
+        id="tags"
+        class="form-control"
+        placeholder="Tags"
+        required
+        type="text">
+    </div>
+      <!--
+        <input
+      [(ngModel)]="name"
+      (keyup.escape)="clear()"
+      autocomplete="off"
+      autofocus
+      class="tool-form__input"
+      name="name"
+      id="name"
+      placeholder="Nome"
+      required
+      type="text">
+        -->
+  </fieldset>
+  <input type="submit" class="btn btn-primary">
+</form>

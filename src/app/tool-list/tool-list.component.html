@@ -1,0 +1,16 @@
+<div class="tool-list">
+  <table class="bordered highlight responsive table">
+    <tbody>
+      <tr *ngFor="let tool of tools | async" class="tool">
+        <td><a href="{{ tool.url }}">{{ tool. name }}</a></td>
+        <td>
+          <div>{{ tool.about }}</div>
+          <div>
+             <span *ngFor="let tag of tool.tags" class="tag">{{ tag }}</span>
+          </div>
+        </td>
+        <td><span>@{{ tool.user }}</span>|<span>{{ tool.count }}</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

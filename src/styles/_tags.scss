@@ -1,0 +1,18 @@
+.tag {
+
+  background-color: $tag-bg;
+  cursor: pointer;
+  font-size: $text-small;
+
+  @include styleBtn();
+
+  &.active {
+    background-color: #EE3371;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: $tag-bg-hover;
+    color: #FFF;
+  }
+}

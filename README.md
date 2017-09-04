@@ -1,61 +1,28 @@
-# [Socorro, Vovó!](https://socorrovovo.github.io)
-Site de apoio ao projeto [socorrovovo][vsoriginal] da [@filosobella][filosobella]
+# Sv
 
-## Sobre
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
-O S.V. nasceu porque a [@filosobella][filosobella] cansou de não saber mexer no GitHub e de ter que abrir o .doc para ver seus links de ferramentas e recursos.
+## Development server
 
-Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconectei] abraçou a causa e inspirou vários [netinhos][netinhos] a seguir essa caminhada supimpa! xD
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Como Contribuir
+## Code scaffolding
 
-### E agora, Vovó? Sou iniciante!
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Calma jovem. Ainda há esperanças! Você pode fazer o [cursinho interativo de GitHub][cursoGithub].
+## Build
 
-Tem medo do terminal? Use o SmartGit ou o cliente gráfico de sua preferência. ;p
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-Eba!!! Agora, você pode contribuir no projeto. :3
+## Running unit tests
 
-Por enquanto, o arquivo que alimenta a lista de ferramentas é o [tools.json][dataFerramentas]. Para contribuir, basta enviar sua sugestão de ferramenta adicionando um objeto com as informações:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-  ```js
-{
-  "name": "",
-  "site": "",
-  "about": "",
-  "categories": [
-    "categoria1",
-    "categoria2"
-  ],
-  "tags":[
-    "tag1",
-    "tag2"
-  ]
-}
-  ```
-Adicione quantas tags quiser. As categorias também são ilimitadas, mas sugerimos que sejam poucas e específicas.
+## Running end-to-end tests
 
-Mas se o desespero com o GitHub ainda existir, Vovó te ajudará. Entre em contato nas redes sociais.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
-## Como aparecer na página de Netinhos
+## Further help
 
-### Caso você tenha GitHub
-
-1. Após contribuir (pull request), você será adicionado na área de [contribuidores](contribuidores) do @socorrovovo.
-2. Pronto! Você já aparece lá na página de [Netinhos](netinhos). Caso não apareça no momento, aguarde um pouco e veja novamente.
-
-### Caso não tenha GitHub
-
-Iremos adicionar você manualmente na página @socorrovovo.
-
-1. Após contribuir, nos envie seus dados.
-2. Faremos esta inclusão manual.
-3. Pronto! Você já aparece lá!
-
-[cursoGithub]: https://try.github.io/levels/1/challenges/1
-[dataFerramentas]: /data/tools.json
-[euconectei]: https://github.com/euconectei
-[filosobella]: https://github.com/filosobella
-[netinhos]: https://github.com/orgs/socorrovovo/people
-[vsoriginal]: https://github.com/filosobella/socorrovovo
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

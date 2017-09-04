@@ -1,0 +1,15 @@
+body {
+  color: #9599A9;
+  font-family: 'Source Sans Pro';
+}
+
+main {
+  a {
+    color: $link-color;
+
+    &:hover {
+      color: $link-color-hover;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.tool a {
+  font-weight: bold;
+}
+
+.tool-list {
+  tr {
+    border-bottom: 1px solid $tool-list-border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  td {
+    padding: 10px;
+  }
+}

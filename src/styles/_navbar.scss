@@ -1,0 +1,42 @@
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+
+.main-menu {
+  @include background-gradient($color-primary, $color-secondary);
+
+  a {
+    color: #EE3371;
+    text-transform: uppercase;
+
+    @media(max-width: 1135px) {
+      padding: 0 5px;
+    }
+  }
+
+  a.btn {
+    background-color: #EE3371;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  a:hover.btn {
+    background-color: #ef115b;
+    color: #FFF;
+  }
+
+  a.brand {
+    color: #FFF;
+  }
+  .text-highlight {
+    color: #EE3371;
+  }
+  .brand img {
+    height: 40px;
+    vertical-align: middle;
+  }
+
+}
+nav .button-collapse {float: right;}
+
+

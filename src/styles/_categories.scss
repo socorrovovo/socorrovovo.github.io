@@ -1,0 +1,26 @@
+.categories {
+  a,
+  span {
+    display: inline-block;
+    margin: 0;
+    padding: 20px 5px;
+  }
+
+  a {
+    color: #444;
+  }
+
+  &.active a {
+    color: #EE3371;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  ul,
+  li {
+    display: inline-block;
+    margin: 0;
+  }
+}
