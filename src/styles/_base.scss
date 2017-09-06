@@ -6,6 +6,7 @@ body {
 main {
   a {
     color: $link-color;
+    transition: all .3s linear;
 
     &:hover {
       color: $link-color-hover;

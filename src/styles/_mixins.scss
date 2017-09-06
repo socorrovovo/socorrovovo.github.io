@@ -16,3 +16,9 @@
   margin-right: 5px;
   padding: $btn-padding;
 }
+
+@keyframes pulse {
+  0% { font-size: 1em; }
+  50% { font-size: .8em; }
+  100% { font-size: 1em; }
+}

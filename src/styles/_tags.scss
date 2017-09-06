@@ -3,6 +3,7 @@
   background-color: $tag-bg;
   cursor: pointer;
   font-size: $text-small;
+  transition: all .3s linear;
 
   @include styleBtn();
 

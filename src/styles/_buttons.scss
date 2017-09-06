@@ -4,4 +4,18 @@
 .btn-like {
   display: inline-block;
   font-weight: normal !important;
+  position: relative;
+  height: 24px;
+
+  .fa-heart {
+    display: inline-block;
+    transform-origin: center center;
+    width: 17px;
+  }
+
+  &:hover {
+    .fa-heart {
+      animation: pulse 1s infinite;
+    }
+  }
 }
