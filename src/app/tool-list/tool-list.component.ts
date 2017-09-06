@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
+import { Observable } from 'rxjs/Observable';
+
 import { ITool } from '../tool/tool';
 import { ToolService } from '../tool/tool.service';
-import { Observable } from 'rxjs/Observable';
+import {  } from '../auth/auth.service';
 
 @Component({
   selector: 'app-tool-list',
@@ -19,13 +21,12 @@ export class ToolListComponent implements OnInit {
     this.tools = <FirebaseListObservable<any>> service.tools.map((items) => {
       return items.map((item: ITool) => {
         item.count = item.like.length;
-        // item.user = db.database;
+        let username = db.object(`users/${item.user}`);
+        username.subscribe(res => item.user = res.username || res.name.split(' ', 1));
         return item;
       });
     });
-    // this.tools = service.tools;
 
-    // console.log(this.tools);
   }
 
   ngOnInit() {}

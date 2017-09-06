@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 
 import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { Router } from "@angular/router";
 import * as firebase from 'firebase/app';
 
 import { Observable } from 'rxjs/Observable';
@@ -8,46 +10,160 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class AuthService {
-  authenticated$: Observable<boolean>;
-  uid$: Observable<string>;
 
-  constructor(private firebaseAuth: AngularFireAuth) {
-    this.authenticated$ = firebaseAuth.authState.map(user => !!user);
-    this.uid$ = firebaseAuth.authState.map(user => user.uid);
+  authState: any = null;
+  // authenticated$: Observable<boolean>;
+  // uid$: Observable<string>;
+  // afDB: any;
+
+  constructor(private afAuth: AngularFireAuth,
+              private db: AngularFireDatabase,
+              private router:Router) {
+
+    this.afAuth.authState.subscribe((auth) => {
+      this.authState = auth
+    });
+    // this.authenticated$ = afAuth.authState.map(user => !!user);
+    // this.uid$ = afAuth.authState.map(user => user.uid);
+    // this.afDB = db;
+
   }
 
-  signup(email: string, password: string) {
-    this.firebaseAuth
-      .auth
-      .createUserWithEmailAndPassword(email, password)
-      .then(value => {
-        console.log('Sucesso: ', value);
+  // Returns true if user is logged in
+  get authenticated(): boolean {
+    return this.authState !== null;
+  }
+
+  // Returns current user data
+  get currentUser(): any {
+    return this.authenticated ? this.authState : null;
+  }
+
+
+  // Returns
+  get currentUserObservable(): any {
+    return this.afAuth.authState
+  }
+
+  // Returns current user UID
+  get currentUserId(): string {
+    return this.authenticated ? this.authState.uid : '';
+  }
+
+  // Anonymous User
+  get currentUserAnonymous(): boolean {
+    return this.authenticated ? this.authState.isAnonymous : false
+  }
+
+  // Returns current user display name or Guest
+  get currentUserDisplayName(): string {
+    if (!this.authState) { return 'Visitante' }
+    else if (this.currentUserAnonymous) { return 'Anônimo' }
+    else { return this.authState['displayName'] || 'Usuário sem nome' }
+  }
+
+  // Returns user data
+  // user(id): any {
+  //   return this.afDB.list(`users/${id}`) || null;
+  // }
+
+  //// Social Auth ////
+
+  githubLogin() {
+    const provider = new firebase.auth.GithubAuthProvider()
+    return this.socialSignIn(provider);
+  }
+
+  googleLogin() {
+    const provider = new firebase.auth.GoogleAuthProvider()
+    return this.socialSignIn(provider);
+  }
+
+  facebookLogin() {
+    const provider = new firebase.auth.FacebookAuthProvider()
+    return this.socialSignIn(provider);
+  }
+
+  twitterLogin(){
+    const provider = new firebase.auth.TwitterAuthProvider()
+    return this.socialSignIn(provider);
+  }
+
+  private socialSignIn(provider) {
+    return this.afAuth.auth.signInWithPopup(provider)
+      .then((credential) =>  {
+          this.authState = credential.user
+          this.updateUserData()
       })
-      .catch(err => {
-        console.log('Algo errado aconteceu: ', err.message);
+      .catch(error => {
+        (error['code'] == 'auth/account-exists-with-different-credential') ? alert('Usuário cadastrado utilizando outra ferramenta.') : console.log(error);
       });
   }
 
-  login(email: string, password: string) {
-    this.firebaseAuth
-      .auth
-      .signInWithEmailAndPassword(email, password)
-      .then(value => {
-        console.log('Entrou!');
+    //// Anonymous Auth ////
+
+  // anonymousLogin() {
+  //   return this.afAuth.auth.signInAnonymously()
+  //   .then((user) => {
+  //     this.authState = user
+  //     this.updateUserData()
+  //   })
+  //   .catch(error => console.log(error));
+  // }
+
+  //// Email/Password Auth ////
+
+  emailSignUp(email:string, password:string) {
+    return this.afAuth.auth.createUserWithEmailAndPassword(email, password)
+      .then((user) => {
+        this.authState = user
+        this.updateUserData()
       })
-      .catch(err => {
-        console.log('Algo errado aconteceu: ', err.message);
-      })
+      .catch(error => console.log(error));
   }
 
-  loginWithGoogle() {
-    this.firebaseAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+  emailLogin(email:string, password:string) {
+     return this.afAuth.auth.signInWithEmailAndPassword(email, password)
+       .then((user) => {
+         this.authState = user
+         this.updateUserData()
+       })
+       .catch(error => console.log(error));
   }
 
-  logout() {
-    this.firebaseAuth
-      .auth
-      .signOut();
+  // Sends email allowing user to reset password
+  resetPassword(email: string) {
+    var auth = firebase.auth();
+
+    return auth.sendPasswordResetEmail(email)
+      .then(() => console.log("email sent"))
+      .catch((error) => console.log(error))
+  }
+
+
+  //// Sign Out ////
+
+  signOut(): void {
+    this.afAuth.auth.signOut();
+    this.router.navigate(['/'])
+  }
+
+
+  //// Helpers ////
+
+  private updateUserData(): void {
+  // Writes user name and email to realtime db
+  // useful if your app displays information about users or for admin features
+
+    let path = `users/${this.currentUserId}`; // Endpoint on firebase
+    let data = {
+                  email: this.authState.email,
+                  name: this.authState.displayName
+                }
+
+    this.db.object(path).update(data)
+    .catch(error => console.log(error));
+
   }
 
 }

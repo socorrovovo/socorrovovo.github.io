@@ -14,12 +14,12 @@ export class ToolService {
 
   constructor(db: AngularFireDatabase, auth: AuthService) {
 
-    auth.uid$
-      .subscribe(uid => {
-        // const path = `/tools/${uid}`;
-        // this.tools = db.list(path);
-        this.uid = uid;
-      });
+    // auth.uid$
+    //   .subscribe(uid => {
+    //     // const path = `/tools/${uid}`;
+    //     // this.tools = db.list(path);
+    //     this.uid = uid;
+    //   });
     this.tools = db.list('/tools');
   }
 

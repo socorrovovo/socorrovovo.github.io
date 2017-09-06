@@ -9,7 +9,9 @@
              <span *ngFor="let tag of tool.tags" class="tag">{{ tag }}</span>
           </div>
         </td>
-        <td><span>@{{ tool.user }}</span>|<span>{{ tool.count }}</span></td>
+        <td>
+          <span><span class="fa fa-user"></span> @{{ tool.user }}</span> | <a href="#" class="btn-like"><span class="fa fa-heart"></span> {{ tool.count }}</a>
+        </td>
       </tr>
     </tbody>
   </table>

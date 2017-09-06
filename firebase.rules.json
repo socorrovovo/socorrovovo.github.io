@@ -1,6 +1,24 @@
 {
   "rules": {
-    ".read": "auth != null",
-    ".write": "auth != null"
+    "tools": {
+      ".read": "true",
+      ".write": "auth != null"
+    },
+    "users": {
+      "$uid": {
+        "email": {
+          ".read": true,
+          ".write": "auth !== null && auth.uid === $uid"
+        },
+        "name": {
+          ".read": true,
+          ".write": "auth !== null && auth.uid === $uid"
+        },
+        "username": {
+          ".read": true,
+          ".write": "auth !== null && auth.uid === $uid"
+        }
+      }
+    }
   }
 }
