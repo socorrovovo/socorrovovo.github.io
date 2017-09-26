@@ -21,7 +21,7 @@ export class AuthService {
               private router:Router) {
 
     this.afAuth.authState.subscribe((auth) => {
-      this.authState = auth
+      this.authState = auth;
     });
     // this.authenticated$ = afAuth.authState.map(user => !!user);
     // this.uid$ = afAuth.authState.map(user => user.uid);

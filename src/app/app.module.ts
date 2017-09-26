@@ -15,6 +15,7 @@ import { ToolFormComponent } from './tool-form/tool-form.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { ToolModule } from './tool/tool.module';
 import { ToolService } from './tool/tool.service';
+import { LikeService } from './like/like.service';
 import { AuthComponent } from './auth/auth.component';
 
 const appRoutes: Routes = [
@@ -56,6 +57,7 @@ const appRoutes: Routes = [
   ],
   providers: [
     AuthService,
+    LikeService,
     ToolService
   ],
   bootstrap: [AppComponent]
