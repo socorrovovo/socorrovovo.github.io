@@ -24,7 +24,6 @@
       "tags":[
         "images",
         "textures",
-        "free"
       ]
     },
     {
@@ -36,8 +35,7 @@
       ],
       "tags":[
         "images",
-        "icons",
-        "free"
+        "icons"
       ]
     },
     {
@@ -49,7 +47,7 @@
       ],
       "tags":[
         "images",
-        "free"
+        "landscapes"
       ]
     },
     {
@@ -81,7 +79,7 @@
       "site": "https://devmind.io/",
       "about": "An brazilian cross-platform cloud based IDE to develop websites and applications.",
       "categories": [
-        "dev"
+        "produtividade"
       ],
       "tags":[
         "devmind",
@@ -96,7 +94,7 @@
       "site": "http://codepen.io/",
       "about": "Show case of advanced techniques with editable source code.",
       "categories": [
-        "dev"
+        "produtividade"
       ],
       "tags":[
         "cloud",
@@ -110,7 +108,7 @@
       "site": "https://codeanywhere.com/",
       "about": "A complete toolset for web development. Enabling you to edit, collaborate and run your projects from any device.",
       "categories": [
-        "dev"
+        "produtividade"
       ],
       "tags":[
         "cloud",
@@ -144,11 +142,49 @@
       ]
     },
     {
+      "name": "Pexels",
+      "site": "http://www.pexels.com",
+      "about": "Pexels is a royalty-free high quality image repository.",
+      "categories": [
+        "design"
+      ],
+      "tags":[
+        "images",
+        "landscapes"
+      ]
+    },
+    {
+      "name": "Material Icons",
+      "site": "https://materialdesignicons.com/",
+      "about": "Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project.",
+      "categories": [
+        "design"
+      ],
+      "tags":[
+        "icons",
+        "material",
+        "vectors",
+        "graphics"
+      ]
+    },
+    {
+      "name": "CMM - Skyboxes",
+      "site": "http://www.custommapmakers.org/skyboxes.php",
+      "about": "Page with plenty of royalty-free high quality skybox textures for 3D models.",
+      "categories": [
+        "outros"
+      ],
+      "tags":[
+        "textures",
+        "skybox"
+      ]
+    },
+    {
       "name": "Cloud9",
       "site": "https://c9.io/",
       "about": "IDE online com container para diversas linguagens",
       "categories": [
-        "dev"
+        "produtividade"
       ],
       "tags":[
         "c9",
