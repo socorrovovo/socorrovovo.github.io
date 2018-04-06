@@ -15,6 +15,8 @@ Somos uma comunidade colaborativa de indicações porque o [@euconectei][euconec
 
 (em andamento)
 
+---
+
 Obs: Esta reformulação não te impede de aprender:
 
 - [Github][cursogithub]
