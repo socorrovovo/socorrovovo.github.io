@@ -3,11 +3,11 @@ import React from 'react';
 import { auth } from '../../config';
 
 const SignOutButton = () =>
-  <button
+  <span className="link"
     type="button"
     onClick={auth.doSignOut}
   >
     Sign Out
-  </button>
+  </span>
 
 export default SignOutButton;
