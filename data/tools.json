@@ -5,7 +5,7 @@
       "site": "https://gitignore.io",
       "about": "Gerador de .gitignore",
       "categories": [
-        "dev",
+        "developer tools",
         "front-end"
       ],
       "tags":[
@@ -19,7 +19,7 @@
       "site": "http://www.amazingtextures.com",
       "about": "AmazingTextures.com is one of the biggest and most popular dedicated online texture libraries in the world.",
       "categories": [
-        "design"
+        "others"
       ],
       "tags":[
         "images",
@@ -79,7 +79,7 @@
       "site": "https://devmind.io/",
       "about": "An brazilian cross-platform cloud based IDE to develop websites and applications.",
       "categories": [
-        "produtividade"
+        "code editor"
       ],
       "tags":[
         "devmind",
@@ -94,7 +94,7 @@
       "site": "http://codepen.io/",
       "about": "Show case of advanced techniques with editable source code.",
       "categories": [
-        "produtividade"
+        "developer tools"
       ],
       "tags":[
         "cloud",
@@ -108,7 +108,7 @@
       "site": "https://codeanywhere.com/",
       "about": "A complete toolset for web development. Enabling you to edit, collaborate and run your projects from any device.",
       "categories": [
-        "produtividade"
+        "code editor"
       ],
       "tags":[
         "cloud",
@@ -120,8 +120,9 @@
     {
       "name": "Web App Manifest Generator",
       "site": "https://tomitm.github.io/appmanifest/",
-      "about": "Criador dinâmico de manifest.json",
+      "about": "Dynamic creator for manifest.json files.",
       "categories": [
+        "developer tools",
         "front-end"
       ],
       "tags":[
@@ -132,7 +133,7 @@
     {
       "name": "Freepik",
       "site": "http://br.freepik.com/",
-      "about": "Site para download de imagens e vetores",
+      "about": "Great source for images and vectors.",
       "categories": [
         "design"
       ],
@@ -172,19 +173,31 @@
       "site": "http://www.custommapmakers.org/skyboxes.php",
       "about": "Page with plenty of royalty-free high quality skybox textures for 3D models.",
       "categories": [
-        "outros"
+        "others"
       ],
       "tags":[
-        "textures",
+        "texturas",
         "skybox"
+      ]
+    },
+    {
+      "name": "PWA Builder",
+      "site": "https://www.pwabuilder.com/",
+      "about": "Improve and Build your own Progressive Web Apps easily.",
+      "categories": [
+        "developer tools"
+      ],
+      "tags":[
+        "pwa builder",
+        "pwa"
       ]
     },
     {
       "name": "Cloud9",
       "site": "https://c9.io/",
-      "about": "IDE online com container para diversas linguagens",
+      "about": "Online IDE with containers for your projects.",
       "categories": [
-        "produtividade"
+        "code editor"
       ],
       "tags":[
         "c9",
